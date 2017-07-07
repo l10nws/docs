@@ -2,12 +2,14 @@
 title: L10n.ws
 ---
 
-# L10n.ws - The Localization Management Service
+# The Localization Management Service
 ### Simplify the localization and internationalization process of your product via L10n.ws
 
 If you're ready to simplify and optimize your localization management, and save money in the process,
-you can learn more about the benefits of a localization management service by clicking on the demo link below.
+you can learn more about the benefits of a localization management service by clicking on the demo link below 
+
 [Demo](https://l10n.ws/demo)
+
 
 ## Features
 ### Automate the localization process for agile development
