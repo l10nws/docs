@@ -1,38 +1,29 @@
 ---
-title: Welcome
+title: L10n.ws
 ---
 
-This is the **Edition** template from [CloudCannon](http://cloudcannon.com/).
-**Edition** is perfect for documenting your product, application or service.
-It's populated with example content to give you some ideas.
+# L10n.ws - The Localization Management Service
+### Simplify the localization and internationalization process of your product via L10n.ws
 
-ChatApp is a fictional chat application for sending messages and media to others.
-Teams and friend groups would use ChatApp to stay up to date if it existed.
+If you're ready to simplify and optimize your localization management, and save money in the process,
+you can learn more about the benefits of a localization management service by clicking on the demo link below.
+[Demo](https://l10n.ws/demo)
 
-> [Sign up](http://example.com/signup) or learn more about ChatApp at [example.com](http://example.com/).
+## Features
+### Automate the localization process for agile development
 
-### Getting Started
+#### Centralized Data Storage
 
-Getting a message sent is quick and easy with ChatApp:
+Multiple users are able to concurrently make edits to translations that are stored in a central repository.
 
-1. Sign up for an account
-2. Add your friends from their email addresses
-3. Type a message or send a photo
+#### Cost Savings
 
-> Feel free to send us a message at [feedback@example.com](mailto:feedback@example.com) with your feedback.
+Our product provides a simple way to manage content translations that can be modified and deployed by users without requiring developer or administrator intervention.
 
-### Features
+#### Realtime Modification
 
-Explore more of ChatApp by reading about our features:
+Our product enables modifications to be published to production in real time. This allows for content changes and corrections without downtime or delay!
 
-#### Media
+#### Wide Integration
 
-Send images, videos and other media to people. Sources include your computer, phone and Facebook.
-
-#### Contact Syncing
-
-Sync your contact list with your phone and/or Facebook contacts. Never lose your contacts between devices again!
-
-#### Devices
-
-ChatApp is available everywhere. Find out how to set it up on your all your devices.
+Our product features wide integration with other frameworks and build tools. We offer an API that makes it easy to communicate with the rest of your environment and to move content into and out of our platform.
