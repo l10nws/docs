@@ -1,8 +1,8 @@
 # ----
 # Site
 
-title: Edition Template
-url: "https://long-pig.cloudvent.net"
+title: L10n.ws
+url: "https://l10n.ws"
 baseurl:
 google_analytics_key:
 show_full_navigation: true
@@ -15,9 +15,9 @@ author:
   email:
   twitter: # twitter username without the @ symbol
 social:
-  name: Edition Template
+  name: L10n.ws
   links:
-    - https://github.com/CloudCannon/edition-jekyll-template
+    - https://github.com/l10nws
 
 # -----
 # Build

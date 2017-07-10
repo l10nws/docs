@@ -12,15 +12,15 @@
 		<link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
 		<link rel="icon" type="image/png" href="/images/favicon.png">
 
-		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="Edition Template" />
+		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="L10n.ws" />
 		<!-- Begin Jekyll SEO tag v2.0.0 -->
-<title>Search - Edition Template</title>
+<title>Search - L10n.ws</title>
 <meta property="og:title" content="Search" />
 <meta name="description" content="Product documentation template for Jekyll." />
 <meta property="og:description" content="Product documentation template for Jekyll." />
 <link rel="canonical" href="http://localhost:4000/search/" />
 <meta property="og:url" content="http://localhost:4000/search/" />
-<meta property="og:site_name" content="Edition Template" />
+<meta property="og:site_name" content="L10n.ws" />
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -39,8 +39,8 @@
 	<body>
 		<header>
 			<h1>
-				<a href="/"><img src="/images/emblem.svg" width="40" height="40" alt="Edition Template logo"></a>
-				Edition Template
+				<a href="/"><img src="/images/favicon.png" width="60" height="60" alt="L10n.ws logo"></a>
+				L10n.ws
 				<button type="button" class="open-nav" id="open-nav"></button>
 			</h1>
 
@@ -53,7 +53,7 @@
 				<ul>
 					<li class="nav-item top-level ">
 						
-						<a href="/">L10n.ws</a>
+						<a href="/">Welcome</a>
 					</li>
 				</ul>
 
@@ -66,6 +66,26 @@
 							<ul>
 								
 									<li class="nav-item "><a href="/api/API-v1/">API v1 HTTP</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/contact/contact/">Contact US</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/contact/contact/">Contact</a></li>
+								
+							</ul>
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/download/download/">Download</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/download/download/">Self-hosted</a></li>
 								
 							</ul>
 						</li>
@@ -101,7 +121,7 @@
 
 		<section class="main">
 			<div class="page-header">
-				<!--<h2>Edition Template</h2>-->
+				<!--<h2>L10n.ws</h2>-->
 				<h3></h3>
 			</div>
 			<article class="content">
@@ -122,6 +142,40 @@
 						"category": "",
 						"url": " /api/API-v1/",
 						"content": "HTTP API version 1 The L10n API allows developers to work with message bundles via HTTP protocol. Base URL https: l10n.ws api v1 Request and response formats The L10n API uses HTTP GET requests with URL parameters and JSON responses. Every string passed from the API is UTF-8 encoded. Authorization Authorized requests to the API should use an Access-Token header with the value , where is an access token. Error handling Errors are returned using standard HTTP error code syntax. Any additional info is included as JSON in the body of the response. Standard API errors Code Description 400 Bad input parameter. Error message should indicate which one and why. 401 Bad or expired token. This can happen if the access token is expired or if the access token has been revoked by L10n or the user. 405 Request method not expected. 429 Your app is making too many requests for the given user or team and is being rate limited. Your app should wait for the number of seconds specified in the “Retry-After” response header before trying again. 5xx An error occurred on the L10n servers. Path m Description Returns all messages. URL Structure https: l10n.ws api v1 m Example https: l10n.ws api v1 m?b=12345&amp;v=1.0.0&amp;l[]=en_US&amp;l[]=de_DE Parameters Name Required Optional Type Description b required String Bundle key v required String Version name l[] optional Array Locales array Returns { \"defaultLocale\": \"en_US\", \"supportedLocales\": \"en_US\", \"content\": [ { \"locale\": \"en_US\", \"messages\": [ { \"key\": \"foo\", \"value\": \"bar\" }, { \"key\": \"biz\", \"value\": \"baz\" } ] } ] } Response A JSON-encoded dictionary including defaultLocale field and content. Content is a array of all locales with messages in selected bundle."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"contact-contact": {
+						"id": "contact-contact",
+						"title": "Contact",
+						"category": "",
+						"url": " /contact/contact/",
+						"content": ""
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"download-download": {
+						"id": "download-download",
+						"title": "Self-hosted",
+						"category": "",
+						"url": " /download/download/",
+						"content": "Download Self-hosted installation package Self-hosted application You can self-host a L10n application in your own host The Server Requirements: Java (JRE) 1.5+ J2EE Servlet (2.4+) container, JSP 2.0+ container Application is tested under Tomcat 7 which is a recommended server Application is tested under the following operating systems: Linux MacOS X Windows External Databases PostgreSQL 8+ System requirements 512 MB RAM minimum, 1 GB RAM recommended 200 MB hard disk space System requirements are basically determined by the system load."
 					}
 
 					

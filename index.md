@@ -1,5 +1,5 @@
 ---
-title: L10n.ws
+title: Welcome
 ---
 
 # The Localization Management Service

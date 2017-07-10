@@ -18,6 +18,12 @@
 <loc>http://localhost:4000/api/API-v1/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/contact/contact/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/download/download/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/integration/android/</loc>
 </url>
 <url>
