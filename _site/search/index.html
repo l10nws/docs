@@ -72,38 +72,18 @@
 					
 						<li class="nav-item top-level ">
 							
-							<a href="/contact-syncing/facebook/">Contact Syncing</a>
+							<a href="/integration/java/">Integration</a>
 							<ul>
 								
-									<li class="nav-item "><a href="/contact-syncing/facebook/">Facebook</a></li>
+									<li class="nav-item "><a href="/integration/java/">Java</a></li>
 								
-									<li class="nav-item "><a href="/contact-syncing/phone/">Phone</a></li>
+									<li class="nav-item "><a href="/integration/spring/">Spring</a></li>
 								
-							</ul>
-						</li>
-					
-						<li class="nav-item top-level ">
-							
-							<a href="/devices/ios/">Devices</a>
-							<ul>
+									<li class="nav-item "><a href="/integration/gradle/">Gradle</a></li>
 								
-									<li class="nav-item "><a href="/devices/ios/">iOS</a></li>
+									<li class="nav-item "><a href="/integration/maven/">Maven</a></li>
 								
-									<li class="nav-item "><a href="/devices/android/">Android</a></li>
-								
-							</ul>
-						</li>
-					
-						<li class="nav-item top-level ">
-							
-							<a href="/media/images/">Media</a>
-							<ul>
-								
-									<li class="nav-item "><a href="/media/images/">Images</a></li>
-								
-									<li class="nav-item "><a href="/media/video/">Video</a></li>
-								
-									<li class="nav-item "><a href="/media/documents/">Documents</a></li>
+									<li class="nav-item "><a href="/integration/android/">Android</a></li>
 								
 							</ul>
 						</li>
@@ -122,7 +102,7 @@
 		<section class="main">
 			<div class="page-header">
 				<!--<h2>Edition Template</h2>-->
-				<h3>Search</h3>
+				<h3></h3>
 			</div>
 			<article class="content">
 				<p><span id="search-process">Loading</span> results <span id="search-query-container" style="display: none;">for "<strong id="search-query"></strong>"</span></p>
@@ -153,46 +133,12 @@
 					,
 					
 
-					"contact-syncing-facebook": {
-						"id": "contact-syncing-facebook",
-						"title": "Facebook",
-						"category": "",
-						"url": " /contact-syncing/facebook/",
-						"content": "Sync your Facebook contacts with ChatApp. Any of your Facebook friends with ChatApp accounts are automatically added to your contact list! Signing up with Facebook automatically starts syncing contacts. To sync your contacts: Open your User Settings Select the Connect Facebook button Authorise ChatApp"
-					}
-
-					
-				
-			
-		
-			
-				
-					,
-					
-
-					"contact-syncing-phone": {
-						"id": "contact-syncing-phone",
-						"title": "Phone",
-						"category": "",
-						"url": " /contact-syncing/phone/",
-						"content": "Sync your phone contacts with ChatApp. ChatApp saves your phone contacts and adds anyone with an email address to your contact list! Syncing contacts with your phone restores any previously synced contacts. To sync your contacts: Open your User Settings on your phone app Select the Sync Contacts button Authorise ChatApp permissions Select some or all of your contacts"
-					}
-
-					
-				
-			
-		
-			
-				
-					,
-					
-
-					"devices-android": {
-						"id": "devices-android",
+					"integration-android": {
+						"id": "integration-android",
 						"title": "Android",
 						"category": "",
-						"url": " /devices/android/",
-						"content": "Use ChatApp on all of your Android devices. Every version is supported. To install ChatApp on your device: Open the Google Play Store Search for ChatApp Select Install"
+						"url": " /integration/android/",
+						"content": "It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase. Include in project buildscript { repositories { mavenCentral() } dependencies { classpath 'ws.l10n:l10n-android-gradle-plugin:1.0.3' } } apply plugin: 'l10n-android-gradle-plugin' Usage l10nOptions { serviceUrl = \"https: l10n.ws api v1\" accessToken = \"YOUR_ACCESS_TOKEN\" bundleKey = \"YOUR_BUNDLE_KEY\" version = \"YOUR_BUNDLE_VERSION\" fileName = \"strings.xml\" resourcePath = \". src main res\" rewriteExisted = true rewrite existed files, be aware that delete current content useRegion = true if true directories will be in \"values-en-US\" style } Run gradle loadMessages Source Code For more details source code you can find here https: github.com l10nws l10n-java"
 					}
 
 					
@@ -204,12 +150,12 @@
 					,
 					
 
-					"devices-ios": {
-						"id": "devices-ios",
-						"title": "iOS",
+					"integration-gradle": {
+						"id": "integration-gradle",
+						"title": "Gradle",
 						"category": "",
-						"url": " /devices/ios/",
-						"content": "Use ChatApp on most of your Apple devices. Only the latest versions are supported. To install ChatApp on your device: Open the App Store Search for ChatApp Select Install"
+						"url": " /integration/gradle/",
+						"content": "Gradle build plugin that load related to configuration and include message properties files to classpath at pre-compile phase. Include in project buildscript { repositories { mavenCentral() } dependencies { classpath 'ws.l10n:l10n-gradle-plugin:1.0.3' } } apply plugin: 'l10n-gradle-plugin' Usage l10nOptions { serviceUrl = \"https: l10n.ws api v1\" accessToken = \"YOUR_ACCESS_TOKEN\" bundleKey = \"YOUR_BUNDLE_KEY\" version = \"YOUR_BUNDLE_VERSION\" path = \". src main resources\" } Run gradle loadMessages Source Code For more details source code you can find here https: github.com l10nws l10n-java"
 					}
 
 					
@@ -221,12 +167,12 @@
 					,
 					
 
-					"media-documents": {
-						"id": "media-documents",
-						"title": "Documents",
+					"integration-java": {
+						"id": "integration-java",
+						"title": "Java",
 						"category": "",
-						"url": " /media/documents/",
-						"content": "Share documents with your friends! Send work or school projects from your computer or phone. To share a document: Open a message with someone Select the Send Media button Pick a document Changes made to documents after sending are not saved back, you’ll have to get contacts to send you updated versions."
+						"url": " /integration/java/",
+						"content": "Lightweight Java libraries that allow perform low-level calls to access messages of L10n account. HTTP Client This Java library provides general functionality related to HTTP v1 API, includes HTTP transport, error handling, authentication, JSON parsing. Include in project Library published in maven central repository. Maven &lt;dependency&gt; &lt;groupId&gt;ws.l10n&lt; groupId&gt; &lt;artifactId&gt;l10n-client-http&lt; artifactId&gt; &lt;version&gt;1.0.3&lt; version&gt; &lt; dependency&gt; Gradle compile 'ws.l10n:l10n-client-http:1.0.3' Usage Create client String serviceUrl = \"https: l10n.ws api v1\"; String accessToken = \"YOUR_ACCESS_TOKEN\"; MessageBundleService client = new HttpMessageBundleClient(serviceUrl, accessToken); Load messages String bundleKey = \"YOUR_BUNDLE_KEY\"; String bundleVersion = \"YOUR_BUNDLE_VERSION\"; MessageBundle messageBundle = client.loadMessageBundle(bundleKey, bundleVersion); MessageBundleContext messageBundleContext = new SimpleMessageBundleContext(messageBundle); messageBundleContext.getMessage(\"login.username\", Locale.US); Core Library Core Library provides a configurable messages contexts. Context uses L10n Java Client Library for getting message from a service. Maven &lt;dependency&gt; &lt;groupId&gt;ws.l10n&lt; groupId&gt; &lt;artifactId&gt;l10n-core&lt; artifactId&gt; &lt;version&gt;1.0.3&lt; version&gt; &lt; dependency&gt; Gradle compile 'ws.l10n:l10n-core:1.0.3' Usage Create reloadable context ReloadableMessageBundleContext reloadableMessageBundleContext = new ReloadableMessageBundleContext(messageBundleService, bundleKey, bundleVersion); Initialize context reloadableMessageBundleContext.init(); load all message Reload messages reloadableMessageBundleContext.reload(); Source Code For more details source code you can find here https: github.com l10nws l10n-java"
 					}
 
 					
@@ -238,12 +184,12 @@
 					,
 					
 
-					"media-images": {
-						"id": "media-images",
-						"title": "Images",
+					"integration-maven": {
+						"id": "integration-maven",
+						"title": "Maven",
 						"category": "",
-						"url": " /media/images/",
-						"content": "Share images with your friends! Send photos and pictures from your computer, phone or camera. Images are stored until you choose to remove them. To share an image: Open a message with someone Select the Send Media button Pick an image Supported types: JPEG PNG BMP GIF Unsupported types: SVG WEBP"
+						"url": " /integration/maven/",
+						"content": "It is a Maven build plugin that load related to configuration and include message properties files to classpath at pre-compile phase. Include in project Library published in maven central repository. &lt;plugin&gt; &lt;groupId&gt;ws.l10n&lt; groupId&gt; &lt;artifactId&gt;l10n-maven-plugin&lt; artifactId&gt; &lt;version&gt;1.0.3&lt; version&gt; &lt;configuration&gt; &lt;serviceUrl&gt;https: l10n.ws api v1&lt; serviceUrl&gt; &lt;accessToken&gt;YOUR_ACCESS_TOKEN&lt; accessToken&gt; &lt;bundleKey&gt;YOUR_BUNDLE_KEY&lt; bundleKey&gt; &lt;version&gt;YOUR_BUNDLE_VERSION&lt; version&gt; &lt;baseName&gt;messages&lt; baseName&gt; &lt;path&gt;. src main resources&lt; path&gt; &lt; configuration&gt; &lt;executions&gt; &lt;execution&gt; &lt;phase&gt;compile&lt; phase&gt; &lt;goals&gt; &lt;goal&gt;loadMessages&lt; goal&gt; &lt; goals&gt; &lt; execution&gt; &lt; executions&gt; &lt; plugin&gt; Run mvn l10n-maven-plugin:loadMessages Source Code For more details source code you can find here https: github.com l10nws l10n-java"
 					}
 
 					
@@ -255,12 +201,12 @@
 					,
 					
 
-					"media-video": {
-						"id": "media-video",
-						"title": "Video",
+					"integration-spring": {
+						"id": "integration-spring",
+						"title": "Spring",
 						"category": "",
-						"url": " /media/video/",
-						"content": "Share video to your friends! Send videos from your computer, phone, camera or YouTube. To share a video: Open a message with someone Select the Send Media button Pick a video or paste a YouTube link Videos can use up a lot of bandwidth so be aware of your mobile data."
+						"url": " /integration/spring/",
+						"content": "It is a lightweight Java library that provides quick and easy integration with the Spring Framework. Include in project Library published in maven central repository. Maven &lt;dependency&gt; &lt;groupId&gt;ws.l10n&lt; groupId&gt; &lt;artifactId&gt;l10n-spring&lt; artifactId&gt; &lt;version&gt;1.0.3&lt; version&gt; &lt; dependency&gt; Gradle compile 'ws.l10n:l10n-spring:1.0.3' Usage This example show usage of reloadable message context, implementation allow to reload messages in run-time by perform reload() method. &lt;!-- L10n Service Client --&gt; &lt;bean id=\"l10nClient\" class=\"ws.l10n.client.http.HttpMessageBundleClient\"&gt; &lt;constructor-arg name=\"serviceUrl\" value=\"https: l10n.ws api v1\" &gt; &lt;constructor-arg name=\"accessToken\" value=\"YOUR_ACCESS_TOKEN\" &gt; &lt; bean&gt; &lt;!-- Reloadable Message Bundle Context --&gt; &lt;bean id=\"reloadableMessageBundleContext\" class=\"ws.l10n.core.ReloadableMessageBundleContext\" init-method=\"init\"&gt; &lt;constructor-arg name=\"messageBundleService\" ref=\"l10nClient\" &gt; &lt;constructor-arg name=\"bundleKey\" value=\"YOUR_BUNDLE_KEY\" &gt; &lt;constructor-arg name=\"bundleVersion\" value=\"YOUR_BUNDLE_VERSION\" &gt; &lt; bean&gt; Example of scheduled message context will reload messages on fixed time period by specified reloadPeriod property. &lt;!-- L10n Service Client --&gt; &lt;bean id=\"l10nClient\" class=\"ws.l10n.client.http.HttpMessageBundleClient\"&gt; &lt;constructor-arg name=\"serviceUrl\" value=\"https: l10n.ws api v1\" &gt; &lt;constructor-arg name=\"accessToken\" value=\"YOUR_ACCESS_TOKEN\" &gt; &lt; bean&gt; &lt;!-- Scheduled Message Bundle Context --&gt; &lt;bean id=\"scheduledReloadableMessageBundleContext\" class=\"ws.l10n.core.ScheduledReloadableMessageBundleContext\" init-method=\"start\" destroy-method=\"stop\"&gt; &lt;constructor-arg name=\"messageBundleService\" ref=\"l10nClient\" &gt; &lt;constructor-arg name=\"bundleKey\" value=\"YOUR_BUNDLE_KEY\" &gt; &lt;constructor-arg name=\"bundleVersion\" value=\"YOUR_BUNDLE_VERSION\" &gt; &lt;constructor-arg name=\"period\" value=\"#{60 * 60 * 1000}\" &gt; &lt; bean&gt; Integration to String Framework localization and internationalization strategy. &lt;bean id=\"messageSource\" class=\"ws.l10n.spring.L10nBundleMessageSource\"&gt; &lt;constructor-arg name=\"messageContext\" ref=\"reloadableMessageBundleContext|scheduledReloadableMessageBundleContext\" &gt; &lt; bean&gt; Source Code For more details source code you can find here https: github.com l10nws l10n-java"
 					}
 
 					
