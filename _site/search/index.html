@@ -8,7 +8,7 @@
 
 		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
 		<link rel="stylesheet" href="/css/main.css">
-		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="apple-touch-icon" href="/siteicon.png">
 		<link rel="icon" type="image/png" href="/touch-icon.png" sizes="192x192">
 		<link rel="icon" type="image/png" href="/images/favicon.png">
 
@@ -59,6 +59,16 @@
 
 				<ul>
 					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/api/API-v1/">API</a>
+							<ul>
+								
+									<li class="nav-item "><a href="/api/API-v1/">API v1 HTTP</a></li>
+								
+							</ul>
+						</li>
 					
 						<li class="nav-item top-level ">
 							
@@ -124,6 +134,23 @@
 			
 				
 					
+					
+
+					"api-api-v1": {
+						"id": "api-api-v1",
+						"title": "API v1 HTTP",
+						"category": "",
+						"url": " /api/API-v1/",
+						"content": "HTTP API version 1 The L10n API allows developers to work with message bundles via HTTP protocol. Base URL https: l10n.ws api v1 Request and response formats The L10n API uses HTTP GET requests with URL parameters and JSON responses. Every string passed from the API is UTF-8 encoded. Authorization Authorized requests to the API should use an Access-Token header with the value , where is an access token. Error handling Errors are returned using standard HTTP error code syntax. Any additional info is included as JSON in the body of the response. Standard API errors Code Description 400 Bad input parameter. Error message should indicate which one and why. 401 Bad or expired token. This can happen if the access token is expired or if the access token has been revoked by L10n or the user. 405 Request method not expected. 429 Your app is making too many requests for the given user or team and is being rate limited. Your app should wait for the number of seconds specified in the “Retry-After” response header before trying again. 5xx An error occurred on the L10n servers. Path m Description Returns all messages. URL Structure https: l10n.ws api v1 m Example https: l10n.ws api v1 m?b=12345&amp;v=1.0.0&amp;l[]=en_US&amp;l[]=de_DE Parameters Name Required Optional Type Description b required String Bundle key v required String Version name l[] optional Array Locales array Returns { \"defaultLocale\": \"en_US\", \"supportedLocales\": \"en_US\", \"content\": [ { \"locale\": \"en_US\", \"messages\": [ { \"key\": \"foo\", \"value\": \"bar\" }, { \"key\": \"biz\", \"value\": \"baz\" } ] } ] } Response A JSON-encoded dictionary including defaultLocale field and content. Content is a array of all locales with messages in selected bundle."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
 					
 
 					"contact-syncing-facebook": {
