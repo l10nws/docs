@@ -1,10 +1,11 @@
 ---
 title: Self-hosted 
 category: Download
+show_only_one: true
 order: 1
 ---
 
-[Download](/download/l10n-artifacts-1.0.0.zip)
+[Download]({{ site.url }}/download/l10n-artifacts-1.0.0.zip)
 ------------
 Self-hosted installation package 
 

@@ -2,7 +2,7 @@
 title: Spring 
 header: Spring Framework Integration
 category: Integration
-order: 2
+order: 4
 ---
 
 It is a lightweight Java library that provides quick and easy integration with the Spring Framework.
@@ -71,4 +71,4 @@ Integration to String Framework localization and internationalization strategy.
 ````
 
 #### Source Code
-For more details source code you can find here [https://github.com/l10nws/l10n-java](https://github.com/l10nws/l10n-java)
+For more details source code you can find here [{{ site.data.links.git_source_link }}]({{ site.data.links.git_source_link }})

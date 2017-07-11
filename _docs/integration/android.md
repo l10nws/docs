@@ -2,13 +2,13 @@
 title: Android
 header: Android Integration
 category: Integration
-order: 5
+order: 7
 ---
 
 It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase.
 
 Include in project
-```groovy
+````groovy
 buildscript {
    repositories {
        mavenCentral()
@@ -18,7 +18,7 @@ buildscript {
    }
 }
 apply plugin: 'l10n-android-gradle-plugin'
-```
+````
 
 #### Usage
 ````groovy
@@ -42,4 +42,4 @@ gradle loadMessages
 
 
 #### Source Code
-For more details source code you can find here [https://github.com/l10nws/l10n-java](https://github.com/l10nws/l10n-java)
+For more details source code you can find here [{{ site.data.links.git_source_link }}]({{ site.data.links.git_source_link }})

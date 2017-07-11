@@ -2,7 +2,7 @@
 title: Gradle 
 header: Gradle Build Integration
 category: Integration
-order: 3
+order: 5
 ---
 
 Gradle build plugin that load related to configuration and include message properties files to classpath at pre-compile phase.
@@ -39,4 +39,4 @@ gradle loadMessages
 
 #### Source Code
 
-For more details source code you can find here [https://github.com/l10nws/l10n-java](https://github.com/l10nws/l10n-java)
+For more details source code you can find here [{{ site.data.links.git_source_link }}]({{ site.data.links.git_source_link }})
