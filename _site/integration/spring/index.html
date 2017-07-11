@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="generator" content="Jekyll v3.3.1">
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="apple-touch-icon" href="/siteicon.png">
+		<link rel="icon" type="image/png" href="/siteicon.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/images/siteicon.png">
+
+		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="L10n.ws" />
+		<!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>Spring - L10n.ws</title>
+<meta property="og:title" content="Spring" />
+<meta name="description" content="It is a lightweight Java library that provides quick and easy integration with the Spring Framework." />
+<meta property="og:description" content="It is a lightweight Java library that provides quick and easy integration with the Spring Framework." />
+<link rel="canonical" href="http://localhost:4000/integration/spring/" />
+<meta property="og:url" content="http://localhost:4000/integration/spring/" />
+<meta property="og:site_name" content="L10n.ws" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-07-11T18:03:10+03:00" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Spring",
+    "datePublished": "2017-07-11T18:03:10+03:00",
+    "description": "It is a lightweight Java library that provides quick and easy integration with the Spring Framework.",
+    "logo": "http://localhost:4000/siteicon.png",
+    "url": "http://localhost:4000/integration/spring/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/"><img src="/images/favicon.png" width="60" height="60" alt="L10n.ws logo"></a>
+				L10n.ws
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/">Welcome</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/download/download/">Download</a>
+								
+    								
+								
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/api/API-v1/">API</a>
+								
+    								
+									<ul>
+										<li class="nav-item "><a href="/api/API-v1/">API v1 HTTP</a></li>
+									</ul>
+							
+								
+						</li>
+					
+						<li class="nav-item top-level current">
+							
+							<a href="/integration/java/">Integration</a>
+								
+    								
+									<ul>
+										<li class="nav-item "><a href="/integration/java/">Java</a></li>
+									</ul>
+							
+								
+    								
+									<ul>
+										<li class="nav-item current"><a href="/integration/spring/">Spring</a></li>
+									</ul>
+							
+								
+    								
+									<ul>
+										<li class="nav-item "><a href="/integration/gradle/">Gradle</a></li>
+									</ul>
+							
+								
+    								
+									<ul>
+										<li class="nav-item "><a href="/integration/maven/">Maven</a></li>
+									</ul>
+							
+								
+    								
+									<ul>
+										<li class="nav-item "><a href="/integration/android/">Android</a></li>
+									</ul>
+							
+								
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/contact/contact/">Contact us</a>
+								
+    								
+								
+						</li>
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/changelog/">Change Log</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<!--<h2>Integration</h2>-->
+				<h3>Spring Framework Integration</h3>
+			</div>
+			<article class="content">
+				<p>It is a lightweight Java library that provides quick and easy integration with the Spring Framework.</p>
+
+<h4 id="include-in-project">Include in project</h4>
+
+<p>Library published in maven central repository.</p>
+
+<h4 id="maven">Maven</h4>
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;dependency&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>ws.l10n<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>l10n-spring<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>1.0.3<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/dependency&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="gradle">Gradle</h4>
+<div class="language-groovy highlighter-rouge"><pre class="highlight"><code><span class="n">compile</span> <span class="s1">'ws.l10n:l10n-spring:1.0.3'</span>
+</code></pre>
+</div>
+
+<h4 id="usage">Usage</h4>
+
+<p>This example show usage of reloadable message context, implementation allow to reload messages in run-time by perform <code class="highlighter-rouge">reload()</code> method.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="c">&lt;!-- L10n Service Client --&gt;</span>
+<span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"l10nClient"</span> <span class="na">class=</span><span class="s">"ws.l10n.client.http.HttpMessageBundleClient"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"serviceUrl"</span> <span class="na">value=</span><span class="s">"https://l10n.ws/api/v1"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"accessToken"</span> <span class="na">value=</span><span class="s">"YOUR_ACCESS_TOKEN"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/bean&gt;</span>
+
+<span class="c">&lt;!-- Reloadable Message Bundle Context --&gt;</span>
+<span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"reloadableMessageBundleContext"</span> <span class="na">class=</span><span class="s">"ws.l10n.core.ReloadableMessageBundleContext"</span>
+    <span class="na">init-method=</span><span class="s">"init"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"messageBundleService"</span> <span class="na">ref=</span><span class="s">"l10nClient"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"bundleKey"</span> <span class="na">value=</span><span class="s">"YOUR_BUNDLE_KEY"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"bundleVersion"</span> <span class="na">value=</span><span class="s">"YOUR_BUNDLE_VERSION"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/bean&gt;</span>
+</code></pre>
+</div>
+<p>Example of scheduled message context will reload messages on fixed time period by specified <code class="highlighter-rouge">reloadPeriod</code> property.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="c">&lt;!-- L10n Service Client --&gt;</span>
+<span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"l10nClient"</span> <span class="na">class=</span><span class="s">"ws.l10n.client.http.HttpMessageBundleClient"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"serviceUrl"</span> <span class="na">value=</span><span class="s">"https://l10n.ws/api/v1"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"accessToken"</span> <span class="na">value=</span><span class="s">"YOUR_ACCESS_TOKEN"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/bean&gt;</span>
+
+<span class="c">&lt;!-- Scheduled Message Bundle Context --&gt;</span>
+<span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"scheduledReloadableMessageBundleContext"</span> <span class="na">class=</span><span class="s">"ws.l10n.core.ScheduledReloadableMessageBundleContext"</span>
+    <span class="na">init-method=</span><span class="s">"start"</span> <span class="na">destroy-method=</span><span class="s">"stop"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"messageBundleService"</span> <span class="na">ref=</span><span class="s">"l10nClient"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"bundleKey"</span> <span class="na">value=</span><span class="s">"YOUR_BUNDLE_KEY"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"bundleVersion"</span> <span class="na">value=</span><span class="s">"YOUR_BUNDLE_VERSION"</span><span class="nt">/&gt;</span>
+   <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"period"</span> <span class="na">value=</span><span class="s">"#{60 * 60 * 1000}"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/bean&gt;</span>
+</code></pre>
+</div>
+<p>Integration to String Framework localization and internationalization strategy.</p>
+
+<div class="language-xml highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;bean</span> <span class="na">id=</span><span class="s">"messageSource"</span> <span class="na">class=</span><span class="s">"ws.l10n.spring.L10nBundleMessageSource"</span><span class="nt">&gt;</span>
+   <span class="nt">&lt;constructor-arg</span> <span class="na">name=</span><span class="s">"messageContext"</span> <span class="na">ref=</span><span class="s">"reloadableMessageBundleContext|scheduledReloadableMessageBundleContext"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/bean&gt;</span>
+</code></pre>
+</div>
+
+<h4 id="source-code">Source Code</h4>
+<p>For more details source code you can find here <a href="https://github.com/l10nws/l10n-java">https://github.com/l10nws/l10n-java</a></p>
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>

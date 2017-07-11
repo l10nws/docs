@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="generator" content="Jekyll v3.3.1">
+
+		<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic|Open+Sans:400,400italic,600,600italic,700,700italic|Inconsolata:400,700">
+		<link rel="stylesheet" href="/css/main.css">
+		<link rel="apple-touch-icon" href="/siteicon.png">
+		<link rel="icon" type="image/png" href="/siteicon.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="/images/siteicon.png">
+
+		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="L10n.ws" />
+		<!-- Begin Jekyll SEO tag v2.0.0 -->
+<title>Android - L10n.ws</title>
+<meta property="og:title" content="Android" />
+<meta name="description" content="It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase." />
+<meta property="og:description" content="It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase." />
+<link rel="canonical" href="http://localhost:4000/integration/android/" />
+<meta property="og:url" content="http://localhost:4000/integration/android/" />
+<meta property="og:site_name" content="L10n.ws" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-07-11T18:03:10+03:00" />
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Android",
+    "datePublished": "2017-07-11T18:03:10+03:00",
+    "description": "It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase.",
+    "logo": "http://localhost:4000/siteicon.png",
+    "url": "http://localhost:4000/integration/android/"
+  }
+</script>
+<!-- End Jekyll SEO tag -->
+
+		
+	</head>
+
+	<body>
+		<header>
+			<h1>
+				<a href="/"><img src="/images/favicon.png" width="60" height="60" alt="L10n.ws logo"></a>
+				L10n.ws
+				<button type="button" class="open-nav" id="open-nav"></button>
+			</h1>
+
+			<form action="/search/" method="get">
+				<input type="text" name="q" id="search-input" placeholder="Search" autofocus>
+				<input type="submit" value="Search" style="display: none;">
+			</form>
+
+			<nav class="full-navigation">
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/">Welcome</a>
+					</li>
+				</ul>
+
+				<ul>
+					
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/download/download/">Download</a>
+								
+    								
+								
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/api/API-v1/">API</a>
+								
+    								
+									<ul>
+										<li class="nav-item "><a href="/api/API-v1/">API v1 HTTP</a></li>
+									</ul>
+							
+								
+						</li>
+					
+						<li class="nav-item top-level current">
+							
+							<a href="/integration/java/">Integration</a>
+								
+    								
+									<ul>
+										<li class="nav-item "><a href="/integration/java/">Java</a></li>
+									</ul>
+							
+								
+    								
+									<ul>
+										<li class="nav-item "><a href="/integration/spring/">Spring</a></li>
+									</ul>
+							
+								
+    								
+									<ul>
+										<li class="nav-item "><a href="/integration/gradle/">Gradle</a></li>
+									</ul>
+							
+								
+    								
+									<ul>
+										<li class="nav-item "><a href="/integration/maven/">Maven</a></li>
+									</ul>
+							
+								
+    								
+									<ul>
+										<li class="nav-item current"><a href="/integration/android/">Android</a></li>
+									</ul>
+							
+								
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/contact/contact/">Contact us</a>
+								
+    								
+								
+						</li>
+					
+				</ul>
+
+				<ul>
+					<li class="nav-item top-level ">
+						
+						<a href="/changelog/">Change Log</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<section class="main">
+			<div class="page-header">
+				<!--<h2>Integration</h2>-->
+				<h3>Android Integration</h3>
+			</div>
+			<article class="content">
+				<p>It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase.</p>
+
+<p>Include in project</p>
+<div class="language-groovy highlighter-rouge"><pre class="highlight"><code><span class="n">buildscript</span> <span class="o">{</span>
+   <span class="n">repositories</span> <span class="o">{</span>
+       <span class="n">mavenCentral</span><span class="o">()</span>
+   <span class="o">}</span>
+   <span class="n">dependencies</span> <span class="o">{</span>
+       <span class="n">classpath</span> <span class="s1">'ws.l10n:l10n-android-gradle-plugin:1.0.3'</span>
+   <span class="o">}</span>
+<span class="o">}</span>
+<span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">'l10n-android-gradle-plugin'</span>
+</code></pre>
+</div>
+
+<h4 id="usage">Usage</h4>
+<div class="language-groovy highlighter-rouge"><pre class="highlight"><code><span class="n">l10nOptions</span> <span class="o">{</span>
+   <span class="n">serviceUrl</span> <span class="o">=</span> <span class="s2">"https://l10n.ws/api/v1"</span>
+   <span class="n">accessToken</span> <span class="o">=</span> <span class="s2">"YOUR_ACCESS_TOKEN"</span>
+   <span class="n">bundleKey</span> <span class="o">=</span> <span class="s2">"YOUR_BUNDLE_KEY"</span>
+   <span class="n">version</span> <span class="o">=</span> <span class="s2">"YOUR_BUNDLE_VERSION"</span>
+
+   <span class="n">fileName</span> <span class="o">=</span> <span class="s2">"strings.xml"</span>
+   <span class="n">resourcePath</span> <span class="o">=</span> <span class="s2">"./src/main/res"</span>
+   <span class="n">rewriteExisted</span> <span class="o">=</span> <span class="kc">true</span> <span class="c1">// rewrite existed files, be aware that delete current content</span>
+   <span class="n">useRegion</span> <span class="o">=</span> <span class="kc">true</span> <span class="c1">// if true directories will be in "values-en-US" style</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+
+<h4 id="run">Run</h4>
+<div class="language-groovy highlighter-rouge"><pre class="highlight"><code><span class="n">gradle</span> <span class="n">loadMessages</span>
+</code></pre>
+</div>
+
+<h4 id="source-code">Source Code</h4>
+<p>For more details source code you can find here <a href="https://github.com/l10nws/l10n-java">https://github.com/l10nws/l10n-java</a></p>
+
+			</article>
+		</section>
+
+		<script>
+			document.getElementById("open-nav").addEventListener("click", function () {
+				document.body.classList.toggle("nav-open");
+			});
+		</script>
+	</body>
+</html>
