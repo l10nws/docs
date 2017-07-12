@@ -2,6 +2,8 @@
 title: Welcome
 ---
 
+![logo]({{ site.baseurl }}/siteicon.png "Logo")
+
 # The Localization Management Service
 ### Simplify the localization and internationalization process of your product via L10n.ws
 
