@@ -24,6 +24,9 @@
 <loc>http://localhost:4000/download/download/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/example/example/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/integration/android/</loc>
 </url>
 <url>
