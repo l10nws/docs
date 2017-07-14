@@ -1,67 +1,35 @@
-# Edition
+---
+title: Documentation for L10n.ws
+---
 
-Product documentation template for Jekyll. Browse through a [live demo](https://long-pig.cloudvent.net/).
-Start documenting your product, application, service or website with this configurable theme.
+Visit [l10n.ws](https://l10n.ws)
 
-![L10n.ws screenshot](images/_screenshot.png)
+![logo]({{ site.baseurl }}/siteicon.png "Logo")
 
-Edition was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-Find more templates and themes at [Jekyll Tips](http://jekyll.tips/templates/).
+# The Localization Management Service
+### Simplify the localization and internationalization process of your product via L10n.ws
 
-Learn Jekyll with step-by-step tutorials and videos at [Jekyll Tips](http://jekyll.tips/).
+If you're ready to simplify and optimize your localization management, and save money in the process,
+you can learn more about the benefits of a localization management service by clicking on the demo link below 
+
+[Demo(will be soon)]()
+
 
 ## Features
+### Automate the localization process for agile development
 
-* Two column layout
-* Full text search
-* Pre-styled components
-* Auto-generated navigation based on category
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* Change log
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
+#### Centralized Data Storage
 
-## Setup
+Multiple users are able to concurrently make edits to translations that are stored in a central repository.
 
-1. Add your site and author details in `_config.yml`.
-2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+#### Cost Savings
 
-## Develop
+Our product provides a simple way to manage content translations that can be modified and deployed by users without requiring developer or administrator intervention.
 
-Edition was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
+#### Realtime Modification
 
-Install the dependencies with [Bundler](http://bundler.io/):
+Our product enables modifications to be published to production in real time. This allows for content changes and corrections without downtime or delay!
 
-~~~bash
-$ bundle install
-~~~
+#### Wide Integration
 
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
-
-~~~bash
-$ bundle exec jekyll serve
-~~~
-
-## Editing
-
-Edition is already optimised for adding, updating and removing documentation pages in CloudCannon.
-
-### Documentation pages
-
-* Add, update or remove a documentation page in the *Documentation* collection.
-* Change the category of a documentation page to move it to another section in the navigation.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-
-### Change log
-
-* Add, update or remove change log entries from your posts.
-* Tag entries as minor or major in the front matter.
-
-### Search
-
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
-
-### Navigation
-
-* Change `site.show_full_navigation` to control all or only the current navigation group being open.
+Our product features wide integration with other frameworks and build tools. We offer an API that makes it easy to communicate with the rest of your environment and to move content into and out of our platform.
