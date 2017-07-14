@@ -10,7 +10,7 @@ title: Welcome
 If you're ready to simplify and optimize your localization management, and save money in the process,
 you can learn more about the benefits of a localization management service by clicking on the demo link below 
 
-[Demo](https://l10n.ws/demo)
+[Demo(will be soon)]()
 
 
 
