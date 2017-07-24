@@ -4,12 +4,13 @@
 title: L10n.ws
 url: "https://l10nws.github.io/docs"
 baseurl:
-google_analytics_key:
+google_analytics_key: UA-72164927-1
 show_full_navigation: true
+google_site_verification: l0CTb-NMGRSdHY9BoKkeMQf9UdJfuXzYRtts6NZTQZg
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
-description: Product documentation template for Jekyll.
+description: Localization and internationalization web service. It easy to manage translation, translate digital content and deliver it to your product.
 author:
   name:
   email:
