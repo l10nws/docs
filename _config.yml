@@ -11,6 +11,7 @@ google_site_verification: l0CTb-NMGRSdHY9BoKkeMQf9UdJfuXzYRtts6NZTQZg
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
 description: Localization and internationalization web service. It easy to manage translation, translate digital content and deliver it to your product.
+keywords: l10n.ws,l10n,localization,i18n,internationalization,g11n,globalization,translation,locale,management,web service,platform,java,spring
 author:
   name:
   email:
