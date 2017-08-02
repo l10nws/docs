@@ -2,8 +2,6 @@
 title: Welcome
 ---
 
-Visit [l10n.ws](https://l10n.ws)
-
 ![logo]({{ site.baseurl }}/siteicon.png "Logo")
 
 # The Localization Management Service
