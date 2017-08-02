@@ -2,6 +2,7 @@
 
 <html>
 	<head>
+
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="generator" content="Jekyll v3.3.1">
@@ -11,22 +12,24 @@
 		<link rel="apple-touch-icon" href="/siteicon.png">
 		<link rel="icon" type="image/png" href="/siteicon.png" sizes="192x192">
 		<link rel="icon" type="image/png" href="/images/siteicon.png">
+		<meta name="keywords" content="l10n.ws,l10n,localization,i18n,internationalization,g11n,globalization,translation,locale,management,web service,platform,java,spring">
 
 		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="L10n.ws" />
 		<!-- Begin Jekyll SEO tag v2.0.0 -->
 <title>Search - L10n.ws</title>
 <meta property="og:title" content="Search" />
-<meta name="description" content="Product documentation template for Jekyll." />
-<meta property="og:description" content="Product documentation template for Jekyll." />
+<meta name="description" content="Localization and internationalization web service. It easy to manage translation, translate digital content and deliver it to your product." />
+<meta property="og:description" content="Localization and internationalization web service. It easy to manage translation, translate digital content and deliver it to your product." />
 <link rel="canonical" href="http://localhost:4000/search/" />
 <meta property="og:url" content="http://localhost:4000/search/" />
 <meta property="og:site_name" content="L10n.ws" />
+<meta name="google-site-verification" content="l0CTb-NMGRSdHY9BoKkeMQf9UdJfuXzYRtts6NZTQZg" />
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
     "@type": "WebPage",
     "headline": "Search",
-    "description": "Product documentation template for Jekyll.",
+    "description": "Localization and internationalization web service. It easy to manage translation, translate digital content and deliver it to your product.",
     "logo": "http://localhost:4000/siteicon.png",
     "url": "http://localhost:4000/search/"
   }
@@ -34,6 +37,7 @@
 <!-- End Jekyll SEO tag -->
 
 		
+
 	</head>
 
 	<body>
@@ -111,6 +115,24 @@
     								
 									<ul>
 										<li class="nav-item "><a href="/integration/android/">Android</a></li>
+									</ul>
+							
+								
+						</li>
+					
+						<li class="nav-item top-level ">
+							
+							<a href="/portal/common-terminology/">Portal Application</a>
+								
+    								
+									<ul>
+										<li class="nav-item "><a href="/portal/common-terminology/">Common terminology</a></li>
+									</ul>
+							
+								
+    								
+									<ul>
+										<li class="nav-item "><a href="/portal/access-management/">Access management</a></li>
 									</ul>
 							
 								
@@ -315,6 +337,40 @@
 						"category": "",
 						"url": " /integration/spring/",
 						"content": "It is a lightweight Java library that provides quick and easy integration with the Spring Framework. Include in project Library published in maven central repository. Maven &lt;dependency&gt; &lt;groupId&gt;ws.l10n&lt; groupId&gt; &lt;artifactId&gt;l10n-spring&lt; artifactId&gt; &lt;version&gt;1.0.3&lt; version&gt; &lt; dependency&gt; Gradle compile 'ws.l10n:l10n-spring:1.0.3' Usage This example show usage of reloadable message context, implementation allow to reload messages in run-time by perform reload() method. &lt;!-- L10n Service Client --&gt; &lt;bean id=\"l10nClient\" class=\"ws.l10n.client.http.HttpMessageBundleClient\"&gt; &lt;constructor-arg name=\"serviceUrl\" value=\"https: l10n.ws api v1\" &gt; &lt;constructor-arg name=\"accessToken\" value=\"YOUR_ACCESS_TOKEN\" &gt; &lt; bean&gt; &lt;!-- Reloadable Message Bundle Context --&gt; &lt;bean id=\"reloadableMessageBundleContext\" class=\"ws.l10n.core.ReloadableMessageBundleContext\" init-method=\"init\"&gt; &lt;constructor-arg name=\"messageBundleService\" ref=\"l10nClient\" &gt; &lt;constructor-arg name=\"bundleKey\" value=\"YOUR_BUNDLE_KEY\" &gt; &lt;constructor-arg name=\"bundleVersion\" value=\"YOUR_BUNDLE_VERSION\" &gt; &lt; bean&gt; Example of scheduled message context will reload messages on fixed time period by specified reloadPeriod property. &lt;!-- L10n Service Client --&gt; &lt;bean id=\"l10nClient\" class=\"ws.l10n.client.http.HttpMessageBundleClient\"&gt; &lt;constructor-arg name=\"serviceUrl\" value=\"https: l10n.ws api v1\" &gt; &lt;constructor-arg name=\"accessToken\" value=\"YOUR_ACCESS_TOKEN\" &gt; &lt; bean&gt; &lt;!-- Scheduled Message Bundle Context --&gt; &lt;bean id=\"scheduledReloadableMessageBundleContext\" class=\"ws.l10n.core.ScheduledReloadableMessageBundleContext\" init-method=\"start\" destroy-method=\"stop\"&gt; &lt;constructor-arg name=\"messageBundleService\" ref=\"l10nClient\" &gt; &lt;constructor-arg name=\"bundleKey\" value=\"YOUR_BUNDLE_KEY\" &gt; &lt;constructor-arg name=\"bundleVersion\" value=\"YOUR_BUNDLE_VERSION\" &gt; &lt;constructor-arg name=\"period\" value=\"#{60 * 60 * 1000}\" &gt; &lt; bean&gt; Integration to String Framework localization and internationalization strategy. &lt;bean id=\"messageSource\" class=\"ws.l10n.spring.L10nBundleMessageSource\"&gt; &lt;constructor-arg name=\"messageContext\" ref=\"reloadableMessageBundleContext|scheduledReloadableMessageBundleContext\" &gt; &lt; bean&gt; Source Code For more details source code you can find here https: github.com l10nws l10n-java"
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"portal-access-management": {
+						"id": "portal-access-management",
+						"title": "Access management",
+						"category": "",
+						"url": " /portal/access-management/",
+						"content": "Project access management in L10n.ws Portal Account administrator can give access another account to operate project. To do this open projects page and click on add user button, you will see access management page Access management page On this page display all accounts that have access to selected project. Add new account: Write an email of account Select permission Click ‘add’ button After that invited account can see your project in his all projects page."
+					}
+
+					
+				
+			
+		
+			
+				
+					,
+					
+
+					"portal-common-terminology": {
+						"id": "portal-common-terminology",
+						"title": "Common terminology",
+						"category": "",
+						"url": " /portal/common-terminology/",
+						"content": "Commonly used terms in L10n.ws Portal User Account When you sign up portal creates an account. An account typically represents a company or individual user. This account houses various projects and message bundles, account can be invited to administrate or read-only access any projects from another account. Additional information and change password you can find in profile page. Project A project is a container for message bundles. Project can represent a web-site, mobile application, desktop application, etc. Account administrators can create as many projects as they need, they can also assign project maintainers to them as described above. Message bundle A message bundle is a space of storing languages and localized messages. Bundle can represent a module or part of your project. In example below site has two modules admin and user portal, so translations in different bundles. Version A version is a holder of your languages and messages. Any large project need versioning. Try it in demo"
 					}
 
 					

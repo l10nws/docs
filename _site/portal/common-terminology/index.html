@@ -16,12 +16,12 @@
 
 		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="L10n.ws" />
 		<!-- Begin Jekyll SEO tag v2.0.0 -->
-<title>Android - L10n.ws</title>
-<meta property="og:title" content="Android" />
-<meta name="description" content="It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase." />
-<meta property="og:description" content="It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase." />
-<link rel="canonical" href="http://localhost:4000/integration/android/" />
-<meta property="og:url" content="http://localhost:4000/integration/android/" />
+<title>Common terminology - L10n.ws</title>
+<meta property="og:title" content="Common terminology" />
+<meta name="description" content="Commonly used terms in L10n.ws Portal" />
+<meta property="og:description" content="Commonly used terms in L10n.ws Portal" />
+<link rel="canonical" href="http://localhost:4000/portal/common-terminology/" />
+<meta property="og:url" content="http://localhost:4000/portal/common-terminology/" />
 <meta property="og:site_name" content="L10n.ws" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-08-02T18:45:39+03:00" />
@@ -30,11 +30,11 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Android",
+    "headline": "Common terminology",
     "datePublished": "2017-08-02T18:45:39+03:00",
-    "description": "It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase.",
+    "description": "Commonly used terms in L10n.ws Portal",
     "logo": "http://localhost:4000/siteicon.png",
-    "url": "http://localhost:4000/integration/android/"
+    "url": "http://localhost:4000/portal/common-terminology/"
   }
 </script>
 <!-- End Jekyll SEO tag -->
@@ -87,7 +87,7 @@
 								
 						</li>
 					
-						<li class="nav-item top-level current">
+						<li class="nav-item top-level ">
 							
 							<a href="/integration/java/">Integration</a>
 								
@@ -117,19 +117,19 @@
 								
     								
 									<ul>
-										<li class="nav-item current"><a href="/integration/android/">Android</a></li>
+										<li class="nav-item "><a href="/integration/android/">Android</a></li>
 									</ul>
 							
 								
 						</li>
 					
-						<li class="nav-item top-level ">
+						<li class="nav-item top-level current">
 							
 							<a href="/portal/common-terminology/">Portal Application</a>
 								
     								
 									<ul>
-										<li class="nav-item "><a href="/portal/common-terminology/">Common terminology</a></li>
+										<li class="nav-item current"><a href="/portal/common-terminology/">Common terminology</a></li>
 									</ul>
 							
 								
@@ -183,47 +183,38 @@
 
 		<section class="main">
 			<div class="page-header">
-				<!--<h2>Integration</h2>-->
-				<h3>Android Integration</h3>
+				<!--<h2>Portal Application</h2>-->
+				<h3></h3>
 			</div>
 			<article class="content">
-				<p>It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase.</p>
+				<h2 id="commonly-used-terms-in-l10nws-portal">Commonly used terms in L10n.ws Portal</h2>
 
-<p>Include in project</p>
-<div class="language-groovy highlighter-rouge"><pre class="highlight"><code><span class="n">buildscript</span> <span class="o">{</span>
-   <span class="n">repositories</span> <span class="o">{</span>
-       <span class="n">mavenCentral</span><span class="o">()</span>
-   <span class="o">}</span>
-   <span class="n">dependencies</span> <span class="o">{</span>
-       <span class="n">classpath</span> <span class="s1">'ws.l10n:l10n-android-gradle-plugin:1.0.3'</span>
-   <span class="o">}</span>
-<span class="o">}</span>
-<span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">'l10n-android-gradle-plugin'</span>
-</code></pre>
-</div>
+<h3 id="useraccount">User/Account</h3>
 
-<h4 id="usage">Usage</h4>
-<div class="language-groovy highlighter-rouge"><pre class="highlight"><code><span class="n">l10nOptions</span> <span class="o">{</span>
-   <span class="n">serviceUrl</span> <span class="o">=</span> <span class="s2">"https://l10n.ws/api/v1"</span>
-   <span class="n">accessToken</span> <span class="o">=</span> <span class="s2">"YOUR_ACCESS_TOKEN"</span>
-   <span class="n">bundleKey</span> <span class="o">=</span> <span class="s2">"YOUR_BUNDLE_KEY"</span>
-   <span class="n">version</span> <span class="o">=</span> <span class="s2">"YOUR_BUNDLE_VERSION"</span>
+<p>When you sign up portal creates an account. An account typically represents a company or individual user.
+This account houses various projects and message bundles, account can be invited to administrate or read-only access any projects from another account. 
+Additional information and change password you can find in profile page.</p>
 
-   <span class="n">fileName</span> <span class="o">=</span> <span class="s2">"strings.xml"</span>
-   <span class="n">resourcePath</span> <span class="o">=</span> <span class="s2">"./src/main/res"</span>
-   <span class="n">rewriteExisted</span> <span class="o">=</span> <span class="kc">true</span> <span class="c1">// rewrite existed files, be aware that delete current content</span>
-   <span class="n">useRegion</span> <span class="o">=</span> <span class="kc">true</span> <span class="c1">// if true directories will be in "values-en-US" style</span>
-<span class="o">}</span>
-</code></pre>
-</div>
+<p><img src="/images/portal/profile.png" alt="profile page" title="profile" /></p>
 
-<h4 id="run">Run</h4>
-<div class="language-groovy highlighter-rouge"><pre class="highlight"><code><span class="n">gradle</span> <span class="n">loadMessages</span>
-</code></pre>
-</div>
+<h3 id="project">Project</h3>
 
-<h4 id="source-code">Source Code</h4>
-<p>For more details source code you can find here <a href="https://github.com/l10nws/l10n-java">https://github.com/l10nws/l10n-java</a></p>
+<p>A project is a container for message bundles. Project can represent a web-site, mobile application, desktop application, etc. Account administrators can create as many projects as they need, they can also assign project maintainers to them as described above.
+<img src="/images/portal/projects.png" alt="projects view" title="projects" /></p>
+
+<h3 id="message-bundle">Message bundle</h3>
+
+<p>A message bundle is a space of storing languages and localized messages. Bundle can represent a module or part of your project. In example below site has two modules admin and user portal, so translations in different bundles.</p>
+
+<p><img src="/images/portal/message_bundles.png" alt="message bundles view" title="message bundles" /></p>
+
+<h3 id="version">Version</h3>
+
+<p>A version is a holder of your languages and messages. Any large project need versioning.</p>
+
+<p><img src="/images/portal/versions.png" alt="version view" title="versions" /></p>
+
+<p>Try it in  <a href="http://demo.l10n.ws">demo</a></p>
 
 			</article>
 		</section>

@@ -41,4 +41,10 @@
 <url>
 <loc>http://localhost:4000/integration/spring/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/portal/access-management/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/portal/common-terminology/</loc>
+</url>
 </urlset>

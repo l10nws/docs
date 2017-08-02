@@ -16,12 +16,12 @@
 
 		<link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="L10n.ws" />
 		<!-- Begin Jekyll SEO tag v2.0.0 -->
-<title>Android - L10n.ws</title>
-<meta property="og:title" content="Android" />
-<meta name="description" content="It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase." />
-<meta property="og:description" content="It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase." />
-<link rel="canonical" href="http://localhost:4000/integration/android/" />
-<meta property="og:url" content="http://localhost:4000/integration/android/" />
+<title>Access management - L10n.ws</title>
+<meta property="og:title" content="Access management" />
+<meta name="description" content="Project access management in L10n.ws Portal" />
+<meta property="og:description" content="Project access management in L10n.ws Portal" />
+<link rel="canonical" href="http://localhost:4000/portal/access-management/" />
+<meta property="og:url" content="http://localhost:4000/portal/access-management/" />
 <meta property="og:site_name" content="L10n.ws" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2017-08-02T18:45:39+03:00" />
@@ -30,11 +30,11 @@
   {
     "@context": "http://schema.org",
     "@type": "Article",
-    "headline": "Android",
+    "headline": "Access management",
     "datePublished": "2017-08-02T18:45:39+03:00",
-    "description": "It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase.",
+    "description": "Project access management in L10n.ws Portal",
     "logo": "http://localhost:4000/siteicon.png",
-    "url": "http://localhost:4000/integration/android/"
+    "url": "http://localhost:4000/portal/access-management/"
   }
 </script>
 <!-- End Jekyll SEO tag -->
@@ -87,7 +87,7 @@
 								
 						</li>
 					
-						<li class="nav-item top-level current">
+						<li class="nav-item top-level ">
 							
 							<a href="/integration/java/">Integration</a>
 								
@@ -117,13 +117,13 @@
 								
     								
 									<ul>
-										<li class="nav-item current"><a href="/integration/android/">Android</a></li>
+										<li class="nav-item "><a href="/integration/android/">Android</a></li>
 									</ul>
 							
 								
 						</li>
 					
-						<li class="nav-item top-level ">
+						<li class="nav-item top-level current">
 							
 							<a href="/portal/common-terminology/">Portal Application</a>
 								
@@ -135,7 +135,7 @@
 								
     								
 									<ul>
-										<li class="nav-item "><a href="/portal/access-management/">Access management</a></li>
+										<li class="nav-item current"><a href="/portal/access-management/">Access management</a></li>
 									</ul>
 							
 								
@@ -183,47 +183,34 @@
 
 		<section class="main">
 			<div class="page-header">
-				<!--<h2>Integration</h2>-->
-				<h3>Android Integration</h3>
+				<!--<h2>Portal Application</h2>-->
+				<h3></h3>
 			</div>
 			<article class="content">
-				<p>It is a Gradle build plugin capable to load related to configuration resources and include their as strings resource files according to android localization specification on pre-compile phase.</p>
+				<h2 id="project-access-management-in-l10nws-portal">Project access management in L10n.ws Portal</h2>
 
-<p>Include in project</p>
-<div class="language-groovy highlighter-rouge"><pre class="highlight"><code><span class="n">buildscript</span> <span class="o">{</span>
-   <span class="n">repositories</span> <span class="o">{</span>
-       <span class="n">mavenCentral</span><span class="o">()</span>
-   <span class="o">}</span>
-   <span class="n">dependencies</span> <span class="o">{</span>
-       <span class="n">classpath</span> <span class="s1">'ws.l10n:l10n-android-gradle-plugin:1.0.3'</span>
-   <span class="o">}</span>
-<span class="o">}</span>
-<span class="n">apply</span> <span class="nl">plugin:</span> <span class="s1">'l10n-android-gradle-plugin'</span>
-</code></pre>
-</div>
+<p>Account administrator can give access another account to operate project.</p>
 
-<h4 id="usage">Usage</h4>
-<div class="language-groovy highlighter-rouge"><pre class="highlight"><code><span class="n">l10nOptions</span> <span class="o">{</span>
-   <span class="n">serviceUrl</span> <span class="o">=</span> <span class="s2">"https://l10n.ws/api/v1"</span>
-   <span class="n">accessToken</span> <span class="o">=</span> <span class="s2">"YOUR_ACCESS_TOKEN"</span>
-   <span class="n">bundleKey</span> <span class="o">=</span> <span class="s2">"YOUR_BUNDLE_KEY"</span>
-   <span class="n">version</span> <span class="o">=</span> <span class="s2">"YOUR_BUNDLE_VERSION"</span>
+<p>To do this open projects page and click on add user button, you will see access management page</p>
 
-   <span class="n">fileName</span> <span class="o">=</span> <span class="s2">"strings.xml"</span>
-   <span class="n">resourcePath</span> <span class="o">=</span> <span class="s2">"./src/main/res"</span>
-   <span class="n">rewriteExisted</span> <span class="o">=</span> <span class="kc">true</span> <span class="c1">// rewrite existed files, be aware that delete current content</span>
-   <span class="n">useRegion</span> <span class="o">=</span> <span class="kc">true</span> <span class="c1">// if true directories will be in "values-en-US" style</span>
-<span class="o">}</span>
-</code></pre>
-</div>
+<p><img src="/images/portal/projects2.png" alt="projects view" title="projects" /></p>
 
-<h4 id="run">Run</h4>
-<div class="language-groovy highlighter-rouge"><pre class="highlight"><code><span class="n">gradle</span> <span class="n">loadMessages</span>
-</code></pre>
-</div>
+<h3 id="access-management-page">Access management page</h3>
 
-<h4 id="source-code">Source Code</h4>
-<p>For more details source code you can find here <a href="https://github.com/l10nws/l10n-java">https://github.com/l10nws/l10n-java</a></p>
+<p>On this page display all accounts that have access to selected project.</p>
+
+<p>Add new account:</p>
+
+<ul>
+  <li>Write an email of account</li>
+  <li>Select permission</li>
+  <li>Click ‘add’ button</li>
+</ul>
+
+<p><img src="/images/portal/access_management_view.png" alt="access_management_view" title="access_management_view" /></p>
+
+<p>After that invited account can see your project in his all projects page.</p>
+
 
 			</article>
 		</section>
