@@ -33,7 +33,7 @@ Next create database with created owner
 CREATE DATABASE "l10n-portal" OWNER "l10n-portal";
 ```
 
-## Liquibase
+## Database Versioning
 
 For database versioning we are using [Liquibase](http://www.liquibase.org/).
 
