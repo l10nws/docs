@@ -10,7 +10,7 @@ L10n.ws Portal uses [PostgreSQL](https://www.postgresql.org/) database.
 
 After installation first you need to create user owner 
  
-```groovy
+```sql
 DO
 $body$
 BEGIN
@@ -29,7 +29,7 @@ Do not forget to change default password.
 
 Next create database with created owner
 
-```groovy
+```sql
 CREATE DATABASE "l10n-portal" OWNER "l10n-portal";
 ```
 
@@ -39,6 +39,6 @@ For database versioning we are using [Liquibase](http://www.liquibase.org/).
 
 Run liquibase scripts
 
- ```groovy
+ ```sql
 gradlew :liquibase:update -PrunList=portal
 ```
