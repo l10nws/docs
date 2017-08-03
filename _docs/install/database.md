@@ -1,6 +1,6 @@
 ---
 title: Install Database
-category: Install 
+category: Installation 
 order: 9
 ---
 
@@ -37,8 +37,15 @@ CREATE DATABASE "l10n-portal" OWNER "l10n-portal";
 
 For database versioning we are using [Liquibase](http://www.liquibase.org/).
 
-Run liquibase scripts
+Run liquibase changeset scripts from [l10n-app](https://github.com/l10nws/l10n-app)
 
  ```sql
 gradlew :liquibase:update -PrunList=portal
+```
+
+### Updating database version
+For existing database 
+
+```sql
+gradlew :liquibase:changelogSync
 ```
