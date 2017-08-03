@@ -39,13 +39,13 @@ For database versioning we are using [Liquibase](http://www.liquibase.org/).
 
 Run liquibase changeset scripts from [l10n-app](https://github.com/l10nws/l10n-app)
 
- ```sql
+ ```groovy
 gradlew :liquibase:update -PrunList=portal
 ```
 
 ### Updating database version
 For existing database 
 
-```sql
+```groovy
 gradlew :liquibase:changelogSync
 ```
