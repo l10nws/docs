@@ -75,12 +75,13 @@ If you want to use emails in Portal, need to describe SMTP and mail list section
     </mail-list>
 ```
 
-## Set path of configuration file
+### Set path of configuration file
 
 l10n-config.xml configuration file might be placed whatever you want location.
 
 Setup system property or environment property with name **L10N_CONFIG_DIR** and with value
 path to directory where l10n-config.xml
 
+#### NOTE! L10N_CONFIG_DIR must be set or Portal will not started successfully!
 
 
